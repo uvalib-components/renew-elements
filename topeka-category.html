@@ -24,7 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   
   <div class="{{category.theme}}-theme theme-bg-a {{ {wide: wide} | tokenList }}" dummy fit layout vertical center center-justified hero-id="punch" hero>
     <div class="category-bg" relative?="{{wide}}" flex?="{{!wide}}">
-      <core-icon icon="category-images:{{category.id}}" cross-fade-delayed?="{{parentElement.selected === 'category'}}" cross-fade="{{parentElement.selected !== 'category'}}" fit></core-icon>
+      <core-icon hero-id="caticon" hero icon="category-icons:{{category.id}}" cross-fade-delayed?="{{parentElement.selected === 'category'}}" cross-fade="{{parentElement.selected !== 'category'}}" fit></core-icon>
     </div>
   </div>
   
@@ -36,9 +36,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       <topeka-category-front-page name="front" category="{{category}}" wide="{{wide}}" on-previous="{{mainAction}}" on-next="{{showQuizzes}}"></topeka-category-front-page>
     
-      <topeka-quizzes id="quizzes" name="quizzes" selectedPage="{{selected}}" scores="{{scores}}" category="{{category}}" avatar="{{user.avatar}}" wide="{{wide}}" on-quiz-done="{{quizDone}}"></topeka-quizzes>
+      <topeka-quizzes id="quizzes" name="quizzes" selectedPage="{{selected}}" scores="{{scores}}" category="{{category}}" avatar="{{user.avatar}}" wide="{{wide}}" on-quiz-done="{{quizDone}}" more="{{more}}"></topeka-quizzes>
       
-      <topeka-quiz-score name="quizScore" selectedPage="{{selected}}" scores="{{scores}}" category="{{category}}" avatar="{{user.avatar}}" wide="{{wide}}" quizScore="{{quizScore}}"></topeka-quiz-score>
+      <topeka-quiz-score name="quizScore" selectedPage="{{selected}}" scores="{{scores}}" category="{{category}}" on-next="{{doit}}" avatar="{{user.avatar}}" wide="{{wide}}" quizScore="{{quizScore}}" more="{{moreInfo}}"></topeka-quiz-score>
       
       <topeka-results id="results" name="results" scores="{{scores}}" category="{{category}}" avatar="{{user.avatar}}" wide="{{wide}}" on-next="{{showScore}}" cross-fade?="{{parentElement.selected === 'categories'}}"></topeka-results>
       
@@ -58,6 +58,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     selected: 'front',
     selectedItem: null,
     wide: false,
+    more: "", moreInfo: "",
     
     computed: {
       'scores': 'computeScores(allScores, category, dirty)'
@@ -92,16 +93,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         this.$.quizzes.next();
 
         this.async(function() {
-          if (this.scores.length === this.category.quizzes.length) {
-            this.selected = 'results';
-          } else {
-            this.showQuizzes();
-          }
-        }, null, parseInt(CoreStyle.g.transitions.duration));
+          this.doit();
+//          if (this.scores.length === this.category.quizzes.length) {
+//            this.selected = 'results';
+//          } else {
+//            this.showQuizzes();
+//          }
+        }, null, 10000 /*parseInt(CoreStyle.g.transitions.duration)*/ );
 
       } else if (this.selected === 'empty') {
         this.selected = 'front';
         this.fire('main');
+      }
+    },
+
+    doit: function(){
+      if (this.scores.length === this.category.quizzes.length) {
+            this.selected = 'results';
+      } else {
+            this.showQuizzes();
       }
     },
     
@@ -122,6 +132,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
     
     quizDone: function(e, detail) {
+      this.moreInfo = this.more;
       this.$.quizzes.resetScrollTop();
       this.selected = 'quizScore';
       this.quizScore = detail.score;

@@ -24,9 +24,6 @@
     "font-roboto": "Polymer/font-roboto#master",
     "paper-elements": "Polymer/paper-elements#master",
     "platform": "Polymer/platform#master",
-    "polymer": "Polymer/polymer#master",
-    "firebase-element": "Polymer/firebase-element#master",
-    "firebase": "*",
-    "firebase-simple-login": "*"
+    "polymer": "Polymer/polymer#master"
   }
 }

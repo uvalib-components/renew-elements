@@ -121,14 +121,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     categorySelect: function() {
       if (this.category) {
-        var n = this.category.name;
-        if (n === 'leaderboard') {
-          this.showLeaderboard();
-        } else if (n === 'profile') {
-          this.showProfile();
-        } else {
+//        var n = this.category.name;
+//        if (n === 'leaderboard') {
+//          this.showLeaderboard();
+//        } else if (n === 'profile') {
+//          this.showProfile();
+//        } else {
           this.showCategory();
-        }
+//        }
       }
     },
 
@@ -183,13 +183,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
     
     completeStartup: function() {
-      if (this.user) {
+
         this.loadScores();
         this.selected = 'categories';
-      } else {
-        this.resetScores();
-        this.selected = 'profile';
-      }
+ 
     },
 
     transitionEndAction: function() {

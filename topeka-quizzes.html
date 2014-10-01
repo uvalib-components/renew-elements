@@ -24,7 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../paper-fab/paper-fab.html">
 
 <!-- note: .question element has flex for IE10 compatibility -->
-<polymer-element name="topeka-quizzes" attributes="scores category avatar wide" vertical layout>
+<polymer-element name="topeka-quizzes" attributes="scores category avatar wide more" vertical layout>
 <template>
 
   <link rel="stylesheet" href="topeka-quizzes.css">
@@ -58,7 +58,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       </div>
       
-      <paper-fab class="check-button {{ {correct: scores[index] > 0, incorrect: scores[index] === 0} | tokenList }}" icon="{{icon}}" on-tap="{{quizDone}}"></paper-fab>
+      <paper-fab class="check-button {{ {correct: scores[index] > 0, incorrect: scores[index] === 0} | tokenList }}" icon="{{icon}}" on-tap="{{quizDone}}" hero-id="fab" hero></paper-fab>
       
     </div>
     
@@ -109,6 +109,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     indexChanged: function() {
       if (this.category.quizzes) {
         this.quiz = this.category.quizzes[this.index];
+        if (this.quiz && this.quiz.more) this.more = this.quiz.more;
       }
     },
     

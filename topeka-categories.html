@@ -12,6 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../core-toolbar/core-toolbar.html">
 <link rel="import" href="../core-selector/core-selector.html">
 <link rel="import" href="../core-icon/core-icon.html">
+<link rel="import" href="../paper-fab/paper-fab.html">
 
 <polymer-element name="topeka-categories" attributes="user categories category wide allScores" vertical layout>
 <template>
@@ -23,38 +24,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   
     <core-toolbar class="category-toolbar" slide-down?="{{parentElement.selected !== 'category' && parentElement.lastSelected !== 'category'}}">
     
-    <!--
-      <core-icon icon="avatars:avatar-{{user.avatar}}" class="topeka-avatar"></core-icon>
-      <div flex class="user-name">{{user.name}}</div>
-      <div>{{user.score}} pts</div>
-    -->
     <div flex class="title">Alderman Renewal</div>
     <div><img width="250px" src="images/liblogo.svg"></div>
       
     </core-toolbar>
     
-    <core-selector class="category-list content {{ {wide: wide} | tokenList }}" selected="{{selected}}" tile-cascade?="{{parentElement.selected !== 'category' && parentElement.lastSelected !== 'category'}}" fade?="{{parentElement.lastSelected === 'splash'}}">
-      
-
-<!--      
-      <div class="category-item leaderboard" vertical layout>
-        <div class="tile theme-bg-a" dummy fit></div>
-        <div class="tile" flex vertical layout>
-          <div flex relative>
-            
-            <div fit layout vertical center center-justified>
-              <div class="category-bg-wrapper" relative>
-                <core-icon icon="category-icons:leaderboard" class="category-tile-bg" fit></core-icon>
-              </div>
-            </div>
-          </div>
-          <div class="cat-name" horizontal center layout>
-            <div flex>Edwin Alderman</div>
-            <core-icon class="category-icon" icon="arrow-forward"></core-icon>
-          </div>
-        </div>
-      </div>
--->
+    <core-selector class="category-list content {{ {wide: wide} | tokenList }}" selected="{{selected}}" tile-cascade?="{{parentElement.selected !== 'category' && parentElement.lastSelected !== 'category'}}" fade?="{{parentElement.lastSelected === 'splash'}}" layout wrap vertical?="{{wide}}">
     
       <template repeat="{{cat, i in categories}}">
       
@@ -104,28 +79,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </template>
       
       </template>
-
-<!--      
-      <div class="category-item profile" vertical layout>
-        <div class="tile theme-bg-a" dummy fit></div>
-        <div class="tile" flex auto vertical layout>
-          <div flex auto relative>
-            
-            <div fit layout vertical center center-justified>
-              <div class="category-bg-wrapper" relative>
-                <core-icon icon="category-icons:profile" class="category-tile-bg" fit></core-icon>
-              </div>
-            </div>
-          </div>
-          <div class="cat-name" horizontal center layout>
-            <div flex>About</div>
-            <core-icon class="category-icon" icon="arrow-forward"></core-icon>
-          </div>
-        </div>
-      </div>
--->
     
     </core-selector>
+
+<!--    <paper-fab class="social" icon="launch" role="button"></paper-fab>-->
     
   </div>
     
@@ -141,16 +98,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
 
     selectedChanged: function() {
-      // first one is leaderboard, last one is profile
-/*      
-      if (this.selected === 0) {
-        this.category = {name: 'leaderboard'};
-      } else if (this.selected === this.categories.length + 1) {
-        this.category = {name: 'profile'};
-      } else {
-        this.category = this.categories[this.selected - 1];
-      }
-*/
+
       this.category = this.categories[this.selected];
     }
     

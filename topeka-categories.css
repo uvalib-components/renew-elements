@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   position: relative;
   /* TODO(sjmiles): why is this necessary? */
   overflow-x: hidden;
-  background-color: #424242;
+  background-color: #FFF;
 }
 
 .category-toolbar {
@@ -133,7 +133,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .wide .category-item > .tile {
-  margin: 4px;
+  margin: 3px;
 }
 
 .wide .category-item {
@@ -151,8 +151,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   height: 100%;
 }
 
+.wide .category-item:nth-of-type(2) {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+
+.wide .category-item:nth-of-type(2) .category-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wide .category-item:nth-of-type(3) {
+  width: calc(100% / 3);
+  height: calc(100% / 3 );
+}
+
+.wide .category-item:nth-of-type(3) .category-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .wide .category-item:nth-of-type(4) {
   width: calc(100% / 3);
+  height: calc(100% / 3 * 2);
 }
 
 .wide .category-item:nth-of-type(4) .category-bg-wrapper {
@@ -165,18 +186,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   height: calc(100% / 3 * 2);
 }
 
-.wide .category-item:nth-of-type(9) {
-  position: absolute;
-  top: calc(100% / 3 * 2);
-  left: 0;
-  width: calc(100% / 6);
-  height: calc(100% / 3 - 4px);
-}
-
-.wide .category-item:nth-of-type(10) {
-  position: absolute;
-  top: calc(100% / 3 * 2);
-  left: calc(100% / 6);;
-  width: calc(100% / 6);
-  height: calc(100% / 3 - 4px);
+.wide .category-item:nth-of-type(6) {
+  width: calc(100% / 3);
 }

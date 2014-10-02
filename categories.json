@@ -2,27 +2,27 @@
     {
         "name": "Edwin Alderman",
         "id": "alderman",
-        "theme": "green"
+        "theme": "yellow"
     },
     {
         "name": "About",
         "id": "about",
-        "theme": "green"
+        "theme": "grey"
     },
     {
         "name": "History",
         "id": "history",
-        "theme": "green"
+        "theme": "white"
     },
     {
         "name": "Get Involved",
         "id": "involved",
-        "theme": "green"
+        "theme": "orange"
     },
     {
         "name": "Numbers",
         "id": "numbers",
-        "theme": "green"
+        "theme": "blue"
     },
     {
         "name": "Take the Quiz",

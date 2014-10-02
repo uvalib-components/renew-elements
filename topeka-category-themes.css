@@ -10,13 +10,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /* yellow theme */
 .yellow-theme /deep/ .theme-bg, 
 .yellow-theme.theme-bg {
-  background-color: #ffeb3b;
+  background-color: #f2e7c8;
   color: #616161;
 }
 
 .yellow-theme /deep/ .theme-bg-a,
 .yellow-theme.theme-bg-a {
-  background-color: #ffff8d;
+  background-color: #f2e7c8;
 }
 
 .yellow-theme /deep/ .theme-color {
@@ -24,15 +24,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .yellow-theme /deep/ .theme-primary-color {
-  color: #ffeb3b;
+  color: #f2e7c8;
 }
 
 .yellow-theme /deep/ .theme-icon {
-  color: #ffeb3b;
+  color: #f2e7c8;
 }
 
 .yellow-theme /deep/ .theme-border-color {
-  border-color: #ffeb3b;
+  border-color: #f2e7c8;
 }
 
 .yellow-theme /deep/ paper-progress::shadow #progressContainer {
@@ -40,78 +40,78 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .yellow-theme /deep/ paper-progress::shadow #activeProgress {
-  background-color: #ffeb3b;
+  background-color: #f2e7c8;
 }
 
-/* green theme */
-.green-theme /deep/ .theme-bg,
-.green-theme.theme-bg {
+/* grey theme */
+.grey-theme /deep/ .theme-bg,
+.grey-theme.theme-bg {
   background-color: #1de9b6;
   color: #616161;
 }
 
-.green-theme /deep/ .theme-bg-a,
-.green-theme.theme-bg-a {
-  background-color: #b9f6ca;
+.grey-theme /deep/ .theme-bg-a,
+.grey-theme.theme-bg-a {
+  background-color: #2d7283;
 }
 
-.green-theme /deep/ .theme-color {
+.grey-theme /deep/ .theme-color {
   color: #616161;
  }
 
-.green-theme /deep/ .theme-icon {
+.grey-theme /deep/ .theme-icon {
   color: #1de9b6;
 }
 
-.green-theme /deep/ .theme-primary-color {
+.grey-theme /deep/ .theme-primary-color {
   color: #1de9b6;
 }
 
-.green-theme /deep/ .theme-border-color {
+.grey-theme /deep/ .theme-border-color {
   border-color: #1de9b6;
 }
 
-.green-theme /deep/ paper-progress::shadow #progressContainer {
+.grey-theme /deep/ paper-progress::shadow #progressContainer {
   background-color: transparent;
 }
 
-.green-theme /deep/ paper-progress::shadow #activeProgress {
+.grey-theme /deep/ paper-progress::shadow #activeProgress {
   background-color: #1de9b6;
 }
 
-/* red theme */
-.red-theme /deep/ .theme-bg,
-.red-theme.theme-bg {
+/* white theme */
+.white-theme /deep/ .theme-bg,
+.white-theme.theme-bg {
   background-color: #ff5252;
   color: #fff;
 }
 
-.red-theme /deep/ .theme-bg-a,
-.red-theme.theme-bg-a {
-  background-color: #ff8a80;
+.white-theme /deep/ .theme-bg-a,
+.white-theme.theme-bg-a {
+  background-color: #e8e9ea;
 }
 
-.red-theme /deep/ .theme-color {
+.white-theme /deep/ .theme-color {
   color: #fff;
 }
 
-.red-theme /deep/ .theme-icon {
+.white-theme /deep/ .theme-icon {
   color: #ff5252;
 }
 
-.red-theme /deep/ .theme-primary-color {
+.white-theme /deep/ .theme-primary-color {
   color: #ff5252;
 }
 
-.red-theme /deep/ .theme-border-color {
+.white-theme /deep/ .theme-border-color {
   border-color: #ff5252;
 }
 
-.red-theme /deep/ paper-progress::shadow #progressContainer {
+.white-theme /deep/ paper-progress::shadow #progressContainer {
   background-color: transparent;
 }
 
-.red-theme /deep/ paper-progress::shadow #activeProgress {
+.white-theme /deep/ paper-progress::shadow #activeProgress {
   background-color: #ff5252;
 }
 
@@ -124,7 +124,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 .blue-theme /deep/ .theme-bg-a,
 .blue-theme.theme-bg-a {
-  background-color: #84ffff;
+  background-color: #a3dce7;
 }
 
 .blue-theme /deep/ .theme-color {
@@ -151,38 +151,74 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   background-color: #03A9F4;
 }
 
-/* purple theme */
-.purple-theme /deep/ .theme-bg,
-.purple-theme.theme-bg {
+/* orange theme */
+.orange-theme /deep/ .theme-bg,
+.orange-theme.theme-bg {
   background-color: #7e57c2;
   color: #fff;
 }
 
-.purple-theme /deep/ .theme-bg-a,
-.purple-theme.theme-bg-a {
-  background-color: #b388ff;
+.orange-theme /deep/ .theme-bg-a,
+.orange-theme.theme-bg-a {
+  background-color: #feae1a;
 }
 
-.purple-theme /deep/ .theme-color {
+.orange-theme /deep/ .theme-color {
   color: #fff;
 }
 
-.purple-theme /deep/ .theme-icon {
+.orange-theme /deep/ .theme-icon {
   color: #7e57c2;
 }
 
-.purple-theme /deep/ .theme-primary-color {
+.orange-theme /deep/ .theme-primary-color {
   color: #7e57c2;
 }
 
-.purple-theme /deep/ .theme-border-color {
+.orange-theme /deep/ .theme-border-color {
   border-color: #7e57c2;
 }
 
-.purple-theme /deep/ paper-progress::shadow #progressContainer {
+.orange-theme /deep/ paper-progress::shadow #progressContainer {
   background-color: transparent;
 }
 
-.purple-theme /deep/ paper-progress::shadow #activeProgress {
+.orange-theme /deep/ paper-progress::shadow #activeProgress {
   background-color: #7e57c2;
+}
+
+/* green theme */
+.green-theme /deep/ .theme-bg, 
+.green-theme.theme-bg {
+  background-color: #f2e7c8;
+  color: #616161;
+}
+
+.green-theme /deep/ .theme-bg-a,
+.green-theme.theme-bg-a {
+  background-color: #7ac144;
+}
+
+.green-theme /deep/ .theme-color {
+  color: #616161;
+}
+
+.green-theme /deep/ .theme-primary-color {
+  color: #f2e7c8;
+}
+
+.green-theme /deep/ .theme-icon {
+  color: #f2e7c8;
+}
+
+.green-theme /deep/ .theme-border-color {
+  border-color: #f2e7c8;
+}
+
+.green-theme /deep/ paper-progress::shadow #progressContainer {
+  background-color: transparent;
+}
+
+.green-theme /deep/ paper-progress::shadow #activeProgress {
+  background-color: #f2e7c8;
 }

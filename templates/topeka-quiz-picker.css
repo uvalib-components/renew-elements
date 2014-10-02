@@ -19,7 +19,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 .picker-value {
   padding-left: 16px;
   font-size: 114px;
-  color: #00bad2
+  color: #065697;
 }
 
 @media screen and (max-width: 350px) {
@@ -35,7 +35,7 @@ paper-slider {
 paper-slider::shadow #sliderKnobInner,
 paper-slider::shadow #sliderKnobInner::before,
 paper-slider::shadow #sliderBar::shadow #activeProgress {
-  background-color: #00bad2;
+  background-color: #065697;
 }
 
 paper-slider::shadow #sliderBar::shadow #progressContainer {

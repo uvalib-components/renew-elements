@@ -172,11 +172,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <div class="main {{ {scroll: wide} | tokenList }}" flex center layout vertical hero-p>
     <div flex vertical layout cross-fade class="card {{ {wide: wide, 'multi-column': columns>1, tvmode: tvmode} | tokenList }}" relative>
             
-      <core-toolbar class="{{category.theme}}-theme theme-bg">
+      <core-toolbar class="{{category.theme}}-theme theme-bg" hero-id="punch-bottom" hero>
         <div class="title">{{category.name}}</div>
       </core-toolbar>
 
-      <div class="page {{category.theme}}-theme theme-bg-a {{ {scroll: !wide} | tokenList }}" relative layout  flex>
+      <div class="page {{category.theme}}-theme theme-bg-a {{ {scroll: !wide} | tokenList }}" relative layout  flex hero-id="punch" hero>
         <core-icon hero-id="caticon" hero icon="category-icons:{{category.id}}" cross-fade-delayed?="{{parentElement.selected === 'category'}}" cross-fade="{{parentElement.selected !== 'category'}}" fit></core-icon>
 <!--     
         <core-animated-pages id="pages" selected="{{selected}}" on-core-animated-pages-transition-end="{{done}}" transitions="hero-transition" layout flex no-transition?="{{disabled}}">

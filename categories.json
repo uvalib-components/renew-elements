@@ -2,27 +2,33 @@
     {
         "name": "Edwin Alderman",
         "id": "alderman",
-        "theme": "yellow"
+        "theme": "yellow",
+        "leader": "“The modern library has become not only a store-house of thought, but a laboratory, a work shop, a mine, an inspiration for both professors and students.”",
+        "content": "Foo"
     },
     {
         "name": "About",
         "id": "about",
-        "theme": "grey"
+        "theme": "grey",
+        "content": "Foo"
     },
     {
         "name": "History",
         "id": "history",
-        "theme": "white"
+        "theme": "white",
+        "content": "Foo"
     },
     {
         "name": "Get Involved",
         "id": "involved",
-        "theme": "orange"
+        "theme": "orange",
+        "content": "Foo"
     },
     {
         "name": "Numbers",
         "id": "numbers",
-        "theme": "blue"
+        "theme": "blue",
+        "content": "Foo"
     },
     {
         "name": "Take the Quiz",
@@ -64,6 +70,54 @@
                 ],
                 "answer":[0],
                 "more": "The bookstack was constructed with two floors on each of its five stories in order to efficiently house the maximum number of volumes. Thus there are 10 floors in both the Old and New Stacks (1, 1M, 2, 2M, etc.)."
+            },
+            {
+                "type": "single-select-item",
+                "question": "There are two busts in Memorial Hall of Alderman Library. Who do they depict?",
+                "options": [
+                    "E. A. Alderman and E. A. Poe",
+                    "Alderman and Thomas Jefferson",
+                    "Poe and Thomas Jefferson",
+                    "Jefferson and James Madison"
+                ],
+                "answer":[0],
+                "more": "Memorial Hall (the main lobby of Alderman Library) contains a bust of Edwin Anderson Alderman, the first president of the University of Virginia for whom the library is named, and Edgar Allan Poe, the poet and author who was briefly a student at the University in 1826. The bust of Poe, by \"Sculptor of the Confederacy\" George Julian Zolnay, was commissioned by the University and unveiled in 1899 on the fiftieth anniversary of Poe's death. It originally stood in the Rotunda."
+            },
+            {
+                "type": "four-quarter",
+                "question": "What American author was once appointed as \"Consultant on American Literature\" to Alderman Library?",
+                "options": [
+                    "Edna Ferber",
+                    "Ernest Hemingway",
+                    "William Faulkner",
+                    "Paul Bowles"
+                ],
+                "answer":[2],
+                "more": "Faulkner originally came to the University as its first Writer-in-Residence in 1957. He accepted reappointment to that post, and then appointment to the post of Consultant on American History. In 1961 he was elected Balch Lecturer in American Literature, a post he held until his death. The University of Virginia Library holds the world's foremost collection of material pertaining to Faulkner."
+            },
+            {
+                "type": "four-quarter",
+                "question": "When were the New Stacks built?",
+                "options": [
+                    "1947",
+                    "1957",
+                    "1967",
+                    "1977"
+                ],
+                "answer":[2],
+                "more": "America was in Vietnam, the Beatles, Monkees, and Turtles were on the radio, and Alderman Library was out of room for books in the Old Stacks."
+            },
+            {
+                "type": "single-select-item",
+                "question": "What was Alderman Library the first research library to do?",
+                "options": [
+                    "Designate a \"nap room\" for students to take breaks from studying",
+                    "Provide book delivery by drone",
+                    "Set up a petting zoo for students to relieve stress during exams",
+                    "Install a café on site"
+                ],
+                "answer":[3],
+                "more": "Alderman Café opened in September of 1998 and has been popular with the University community and visitors ever since (the other initiatives listed have not yet been realized)."
             }
         ]
     }

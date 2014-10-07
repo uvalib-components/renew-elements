@@ -10,8 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /* yellow theme */
 .yellow-theme /deep/ .theme-bg, 
 .yellow-theme.theme-bg {
-  background-color: #f2e7c8;
-  color: #616161;
+  background-color: #a09885;
+  color: #ffffff;
 }
 
 .yellow-theme /deep/ .theme-bg-a,
@@ -20,7 +20,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .yellow-theme /deep/ .theme-color {
-  color: #616161;
+  color: #a09885;
 }
 
 .yellow-theme /deep/ .theme-primary-color {
@@ -46,8 +46,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /* grey theme */
 .grey-theme /deep/ .theme-bg,
 .grey-theme.theme-bg {
-  background-color: #1de9b6;
-  color: #616161;
+  background-color: #2b4f5a;
+  color: #ffffff;
 }
 
 .grey-theme /deep/ .theme-bg-a,
@@ -56,19 +56,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .grey-theme /deep/ .theme-color {
-  color: #616161;
+  color: #2b4f5a;
  }
 
 .grey-theme /deep/ .theme-icon {
-  color: #1de9b6;
+  color: #2d7283;
 }
 
 .grey-theme /deep/ .theme-primary-color {
-  color: #1de9b6;
+  color: #2d7283;
 }
 
 .grey-theme /deep/ .theme-border-color {
-  border-color: #1de9b6;
+  border-color: #2d7283;
 }
 
 .grey-theme /deep/ paper-progress::shadow #progressContainer {
@@ -76,13 +76,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .grey-theme /deep/ paper-progress::shadow #activeProgress {
-  background-color: #1de9b6;
+  background-color: #2d7283;
 }
 
 /* white theme */
 .white-theme /deep/ .theme-bg,
 .white-theme.theme-bg {
-  background-color: #ff5252;
+  background-color: #9a9a9b;
   color: #fff;
 }
 
@@ -96,15 +96,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .white-theme /deep/ .theme-icon {
-  color: #ff5252;
+  color: #9a9a9b;
 }
 
 .white-theme /deep/ .theme-primary-color {
-  color: #ff5252;
+  color: #9a9a9b;
 }
 
 .white-theme /deep/ .theme-border-color {
-  border-color: #ff5252;
+  border-color: #9a9a9b;
 }
 
 .white-theme /deep/ paper-progress::shadow #progressContainer {
@@ -112,13 +112,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .white-theme /deep/ paper-progress::shadow #activeProgress {
-  background-color: #ff5252;
+  background-color: #9a9a9b;
 }
 
 /* blue theme */
 .blue-theme /deep/ .theme-bg,
 .blue-theme.theme-bg {
-  background-color: #03A9F4;
+  background-color: #6f9399;
   color: #fff;
 }
 
@@ -132,15 +132,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .blue-theme /deep/ .theme-icon {
-  color: #03A9F4;
+  color: #6f9399;
 }
 
 .blue-theme /deep/ .theme-primary-color {
-  color: #03A9F4;
+  color: #6f9399;
 }
 
 .blue-theme /deep/ .theme-border-color {
-  border-color: #03A9F4;
+  border-color: #6f9399;
 }
 
 .blue-theme /deep/ paper-progress::shadow #progressContainer {
@@ -148,13 +148,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .blue-theme /deep/ paper-progress::shadow #activeProgress {
-  background-color: #03A9F4;
+  background-color: #6f9399;
 }
 
 /* orange theme */
 .orange-theme /deep/ .theme-bg,
 .orange-theme.theme-bg {
-  background-color: #7e57c2;
+  background-color: #a77622;
   color: #fff;
 }
 
@@ -168,15 +168,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .orange-theme /deep/ .theme-icon {
-  color: #7e57c2;
+  color: #a77622;
 }
 
 .orange-theme /deep/ .theme-primary-color {
-  color: #7e57c2;
+  color: #a77622;
 }
 
 .orange-theme /deep/ .theme-border-color {
-  border-color: #7e57c2;
+  border-color: #a77622;
 }
 
 .orange-theme /deep/ paper-progress::shadow #progressContainer {
@@ -184,14 +184,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .orange-theme /deep/ paper-progress::shadow #activeProgress {
-  background-color: #7e57c2;
+  background-color: #a77622;
 }
 
 /* green theme */
 .green-theme /deep/ .theme-bg, 
 .green-theme.theme-bg {
-  background-color: #f2e7c8;
-  color: #616161;
+  background-color: #558135;
+  color: #fff;
 }
 
 .green-theme /deep/ .theme-bg-a,
@@ -200,19 +200,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .green-theme /deep/ .theme-color {
-  color: #616161;
+  color: #fff;
 }
 
 .green-theme /deep/ .theme-primary-color {
-  color: #f2e7c8;
+  color: #558135;
 }
 
 .green-theme /deep/ .theme-icon {
-  color: #f2e7c8;
+  color: #558135;
 }
 
 .green-theme /deep/ .theme-border-color {
-  border-color: #f2e7c8;
+  border-color: #558135;
 }
 
 .green-theme /deep/ paper-progress::shadow #progressContainer {
@@ -220,5 +220,5 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 .green-theme /deep/ paper-progress::shadow #activeProgress {
-  background-color: #f2e7c8;
+  background-color: #558135;
 }

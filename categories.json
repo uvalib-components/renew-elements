@@ -22,7 +22,13 @@
     {
         "name": "Get Involved",
         "id": "involved",
-        "theme": "orange"
+        "theme": "orange",
+        "subset": [
+            {"name": "Social Media"},
+            {"name": "Give Us Your Suggestions"},
+            {"name": "Tell Us Your Stories"},
+            {"name": "Send Us Your Photos"}
+        ]
     },
     {
         "name": "Numbers",

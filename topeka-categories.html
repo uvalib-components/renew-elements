@@ -53,6 +53,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
             </div>
           </div>
+          <template repeat="{{subcat, j in cat.subset}}">
+
+          </template>
       </template>
       <template if="{{cat.quizzes}}">
         <template bind="{{allScores[cat.name] as scores}}">

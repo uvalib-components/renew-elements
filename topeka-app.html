@@ -18,7 +18,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../core-animated-pages/transitions/tile-cascade.html">
 <link rel="import" href="../core-media-query/core-media-query.html">
 
-<polymer-element name="topeka-app" attributes="user categories" vertical layout>
+<polymer-element name="topeka-app" attributes="categories" vertical layout>
 <template>
 
   <link rel="stylesheet" href="topeka-app.css">
@@ -29,15 +29,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <span fit class="splash {{ {wide: wide} | tokenList }}" cross-fade></span>
     </div>
     
-    <topeka-categories id="categories" name="categories" user="{{user}}" allScores="{{allScores}}"
+    <topeka-categories id="categories" name="categories" allScores="{{allScores}}"
       categories="{{categories}}" category="{{category}}" wide="{{wide}}" 
       on-core-activate="{{categorySelect}}"></topeka-categories>
   
-    <topeka-category id="category" name="category" user="{{user}}" category="{{category}}" allScores="{{allScores}}" wide="{{wide}}"></topeka-category>
-      
-    <topeka-leaderboard name="leaderboard" user="{{user}}" wide="{{wide}}" category="{{category}}" disabled="{{disableLeaderboard}}"></topeka-leaderboard>
+    <template repeat="{{cat, i in categories}}">
+      <template repeat="{{subcat, j in cat.subset}}">
+        <topeka-categories id="{{cat.id}}-categories" name="{{cat.id}}-categories" allScores="{{allScores}}"
+          categories="{{categories}}" category="{{category}}" wide="{{wide}}" 
+          on-core-activate="{{categorySelect}}"></topeka-categories>
+      </template>
+    </template>
 
-    <topeka-profile id="profile" name="profile" user="{{user}}" wide="{{wide}}"></topeka-profile>
+    <topeka-category id="category" name="category" category="{{category}}" allScores="{{allScores}}" wide="{{wide}}"></topeka-category>
+      
+    <topeka-leaderboard name="leaderboard" wide="{{wide}}" category="{{category}}" disabled="{{disableLeaderboard}}"></topeka-leaderboard>
+
+    <topeka-profile id="profile" name="profile" wide="{{wide}}"></topeka-profile>
     
   </core-animated-pages>
   
@@ -66,10 +74,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     minSplashTime: 1000,
 
     disableLeaderboard: false,
-    
-    observe: {
-      'user': 'startup'
-    },
 
     ready: function() {
       this.test = window.location.search.indexOf('test') >= 0;
@@ -121,17 +125,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     categorySelect: function() {
       if (this.category) {
-//        var n = this.category.name;
-//        if (n === 'leaderboard') {
-//          this.showLeaderboard();
-//        } else if (n === 'profile') {
-//          this.showProfile();
-//        } else {
           if (this.category.type && this.category.type === "page-card")
             this.showLeaderboard();
           else
             this.showCategory();
-//        }
       }
     },
 

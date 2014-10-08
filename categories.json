@@ -3,32 +3,31 @@
         "name": "Edwin Alderman",
         "id": "alderman",
         "theme": "yellow",
-        "leader": "“The modern library has become not only a store-house of thought, but a laboratory, a work shop, a mine, an inspiration for both professors and students.”",
-        "content": "Foo"
+        "type": "page-card",
+        "leader": "“The modern library has become not only a store-house of thought, but a laboratory, a work shop, a mine, an inspiration for both professors and students.”<br /><img style='width:90%' src='images/Alderman_signature.png'>",
+        "content": "<p>In 1904, U.Va.'s Board of Visitors broke with tradition at the nearly 100-year old University. Up until that time, faculty had taken turns overseeing the executive functions of the University, but the administrative workload had grown, and the Board appointed the first president of the University. Their choice was Edwin Anderson Alderman.</p><p>Alderman, a native North Carolinian, had previously been the president of Tulane University and the University of North Carolina. A noted orator and commanding personality, he was catapulted to recognition as a voice for education in the South when, as a professor at UNC, he delivered a paper titled \"Higher Education in the South\" at the Atlanta Exposition meeting of the National Education Association. In his paper, Alderman argued against anti-public education sentiments then prevalent among many Southerners. At U.Va., he continued advocating for social progress and educational reform. \"I desire to change (Virginia's) ideals somewhat,\" he wrote in a 1909 letter, \" . . . to transform it from an aristocratic University to a democratic University.\"</p><p>Among Alderman's many achievements at U.Va. were the founding of the Curry School of Education, the solidifying and strengthening of the Medical School, and the expansion of U.Va.'s presence within the state. During Alderman's tenure enrollment at the University more than tripled (or quadrupled—accounts vary on the exact numbers). Alderman was also a strong advocate for women's education and attempted to open a women's college near Charlottesville that would be sponsored by, and grant degrees from, the University. However, even his charisma was no match for the near-absolute opposition he encountered from students, faculty, and alumni, and he was forced to back off his efforts.</p><p>Alderman was also a staunch believer in the importance of the library to any educational institution—indeed, at UNC he had been in charge of the library for a time. At U.Va., the collections had outgrown the library in the Rotunda sometime in the early part of the 20th century, and in a speech on Founder's Day in 1924, Alderman called for the construction of a million-dollar library.</p><p>Edwin Alderman remained president of the University until his death in 1931. In April of that year, in his last address before the University, he reiterated his wishes: \"The need of a great library building, which by its spaciousness and beauty may stand before the world as a symbol of the worth and dignity of learning, is the supreme requirement of this University.\" When the library was completed in 1938, it was dedicated to him during Final Exercises in June of that year. He is buried in the University cemetery along with many of the most prominent figures of the University.</p>"
     },
     {
         "name": "About",
         "id": "about",
         "theme": "grey",
-        "content": "Foo"
+        "type": "page-card",
+        "content": "<p>The University of Virginia Library is in the midst of planning a bold reorganization of its services and spaces. It is also embarking on a major overhaul of its flagship facility, Alderman Library (1938). The Alderman Renewal project is a multi-year effort to plan and execute an overhaul of this well-loved but well-worn facility.</p><p>We are currently in the initial phase of a Library system study: a six-month program led by a professional architectural planning firm that will engage the U.Va. community through workshops, town hall meetings, and studies of not only Alderman’s condition and structural possibilities, but also its role in the work of the other five buildings and the goals of the Cornerstone Plan.</p>"
     },
     {
         "name": "History",
         "id": "history",
-        "theme": "white",
-        "content": "Foo"
+        "theme": "white"
     },
     {
         "name": "Get Involved",
         "id": "involved",
-        "theme": "orange",
-        "content": "Foo"
+        "theme": "orange"
     },
     {
         "name": "Numbers",
         "id": "numbers",
-        "theme": "blue",
-        "content": "Foo"
+        "theme": "blue"
     },
     {
         "name": "Take the Quiz",

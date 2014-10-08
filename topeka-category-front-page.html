@@ -52,7 +52,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <div class="bottom-bar theme-bg {{ {wide: wide} | tokenList }}" horizontal center layout hero-id="punch-bottom" hero>
     <div cross-fade-delayed?="{{parentElement.selected === 'front'}}">{{category.name}}</div>
-    <paper-fab icon="av:play-arrow" on-tap="{{nextAction}}" scale-up></paper-fab>
+    <template if="{{category.quizzes && category.quizzes.length}}">
+      <paper-fab icon="av:play-arrow" on-tap="{{nextAction}}" scale-up></paper-fab>
+    </template>
   </div>
 
   <div class="dummy {{ {wide: wide} | tokenList }}" hero-id="quizzes-content" hero></div>

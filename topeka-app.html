@@ -127,7 +127,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 //        } else if (n === 'profile') {
 //          this.showProfile();
 //        } else {
-          if (this.category.content)
+          if (this.category.type && this.category.type === "page-card")
             this.showLeaderboard();
           else
             this.showCategory();

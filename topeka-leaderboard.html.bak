@@ -160,16 +160,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       z-index: -1;
     }
 
-    core-toolbar {
-      height: 150px;
-    }
-
-    .icon {
-      height: 200px;
-      width: 200px;
-    }
-
     .caticon {
+      position: absolute !important;
       height: 100%;
       width: 100%;
     }
@@ -179,18 +171,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <div class="bg" fit dummy cross-fade></div>
 
   <div class="main {{ {scroll: wide} | tokenList }}" flex center layout vertical hero-p>
-    <div flex vertical layout crosss-fade class="card  {{category.theme}}-theme theme-bg-a {{ {wide: wide, 'multi-column': columns>1, tvmode: tvmode} | tokenList }}" relative hero-id="punch" hero>
+    <div flex vertical layout cross-fade class="card {{ {wide: wide, 'multi-column': columns>1, tvmode: tvmode} | tokenList }}" relative>
+            
       <core-toolbar class="{{category.theme}}-theme theme-bg" hero-id="punch-bottom" hero>
         <div class="title">{{category.name}}</div>
       </core-toolbar>
 
-      <div class="{{ {scroll: !wide} | tokenList }}" layout vertical>
-          <div layout horizontal wrap>
-            <div class="icon"><core-icon class="caticon" hero-id="caticon" hero icon="category-icons:{{category.id}}" cross-fade-delayed?="{{parentElement.selected === 'category'}}" cross-fade="{{parentElement.selected !== 'category'}}"></core-icon></div>
-            <div class="leader" flex><div class="{{category.theme}}-theme theme-bg-a"><template is="juicy-html" bind="" content="{{category.leader}}"></template></div></div>
-          </div>
-          <div class="cat-content" flex><div class="{{category.theme}}-theme theme-bg-a"><template is="juicy-html" bind="" content="{{category.content}}"></template></div></div>
-
+      <div class="page {{category.theme}}-theme theme-bg-a {{ {scroll: !wide} | tokenList }}" layout vertical flex hero-id="punch" hero>
+      
+        <div flex relative>
+          <core-icon class="caticon" hero-id="caticon" hero icon="category-icons:{{category.id}}" cross-fade-delayed?="{{parentElement.selected === 'category'}}" cross-fade="{{parentElement.selected !== 'category'}}" fit></core-icon>
+        </div>
+        
+          <div class="leader"><template is="juicy-html" bind="" content="{{category.leader}}"></template></div>
+          <div class="cat-content"><template is="juicy-html" bind="" content="{{category.content}}"></template></div>
       </div>
     </div>
     <paper-icon-button hidden?="{{tvmode}}" class="main-button {{ {wide: wide} | tokenList }}" icon="arrow-back" on-tap="{{mainAction}}" cross-fade-delayed?="{{!disabled}}" hero?="{{!disabled}}"></paper-icon-button>
@@ -365,6 +359,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
 
     mainAction: function() {
+//      if (this.$.pages.transitioning.length > 0) {
+//        this.$.pages.complete();
+//      }
       this.disabled = true;
       this.fire('main');
     },

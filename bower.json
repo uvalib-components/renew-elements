@@ -24,6 +24,7 @@
     "font-roboto": "Polymer/font-roboto#master",
     "paper-elements": "Polymer/paper-elements#master",
     "platform": "Polymer/platform#master",
-    "polymer": "Polymer/polymer#master"
+    "polymer": "Polymer/polymer#master",
+    "juicy-html": "Juicy/juicy-html"
   }
 }

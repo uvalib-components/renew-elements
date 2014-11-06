@@ -1,7 +1,7 @@
 {
-  "name": "topeka-elements",
+  "name": "renew-elements",
   "version": "0.0.0",
-  "homepage": "https://github.com/Polymer/topeka-elements",
+  "homepage": "https://github.com/uvalib-components/renew-elements",
   "authors": [],
   "description": "",
   "license": "BSD",
@@ -23,7 +23,7 @@
     "core-style": "Polymer/core-style#master",
     "font-roboto": "Polymer/font-roboto#master",
     "paper-elements": "Polymer/paper-elements#master",
-    "platform": "Polymer/platform#master",
+    "webcomponentsjs": "Polymer/webcomponentsjs",
     "polymer": "Polymer/polymer#master",
     "juicy-html": "Juicy/juicy-html"
   }
